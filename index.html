@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="quiz">
+        <h1 class="title">Geography Quiz</h1>
+        <div id="questions-container">
+            <button type="button" class="question-bubble" id="question-1">1</button>
+            <button type="button" class="question-bubble" id="question-2">2</button>
+            <button type="button" class="question-bubble" id="question-3">3</button>
+            <button type="button" class="question-bubble" id="question-4">4</button>
+            <button type="button" class="question-bubble" id="question-5">5</button>
+            <button type="button" class="question-bubble" id="question-6">6</button>
+            <button type="button" class="question-bubble" id="question-7">7</button>
+            <button type="button" class="question-bubble" id="question-8">8</button>
+            <button type="button" class="question-bubble" id="question-9">9</button>
+            <button type="button" class="question-bubble" id="question-10">10</button>
+        </div>
+        <h2 id="question">
+            Which Country is Kuala Lumpur the capital?
+        </h2>
+        <div id="answers-container">
+            <button type="button" class="answer" id="answer-1">Sweden</button>
+            <button type="button" class="answer" id="answer-2">Vietnam</button>
+            <button type="button" class="answer" id="answer-3">Malaysia</button>
+            <button type="button" class="answer" id="answer-4">Austria</button>
+        </div>
+    </main>
+    <div id="quiz-result">
+        <img src="congrats.svg" alt="">
+        <h2>Congrats! You completed the quiz</h2>
+        <p>You answered <span id="quiz-score"></span>/10 correctly</p>
+        <button type="button" id="play-again">Play again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

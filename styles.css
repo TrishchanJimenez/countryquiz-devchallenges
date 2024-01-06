@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    --gradient: linear-gradient(to right,#E65895, #BC6BE8);
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+#quiz {
+    /* display: none;   */
+    background-color: #343964;
+    width: 60%;
+    margin: 10% auto;
+    text-align: center;
+    padding: 2rem 5rem;
+    border-radius: 10px;
+}
+
+.title {
+    color: #8B8EAB;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+#questions-container {
+    margin-top: 1rem;
+}
+
+.question-bubble {
+    border-radius: 50%;
+    background-color: #393F6E;
+    color: #E2E4F3;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    margin: 0 0.5rem;
+    font-weight: semibold;
+    font-size: 1rem;
+}
+
+.active {
+    background: var(--gradient);
+}
+
+.chosen-answer {
+    background: var(--gradient);
+}
+.answered {
+    background: linear-gradient(to right, #E65895, #BC6BE8) !important;
+}
+
+#question {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #E2E4F3;
+    margin: 1.75em 0;
+}
+
+#answers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.answer {
+    cursor: pointer;
+    border-radius: 15px;
+    background: #393F6E;
+    color: #E2E4F3;
+    padding: 1.75rem 0;
+    border: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer:hover {
+    /* background: var(--gradient); */
+}
+
+.answered-logo {
+    margin: 0 0.5rem;
+}
+
+#quiz-result {
+    background-color: #343964;
+    width: 30%;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #E2E4F3;
+    display: none;
+}
+
+#quiz-result h2 {
+    margin-top: 1.5em;
+    font-size: 1.25rem;
+    font-weight: semibold;
+}
+
+#quiz-result p {
+    margin-top: 1em;
+}
+
+#play-again {
+    /* display: none; */
+    cursor:pointer;
+    background: var(--gradient);
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    padding: 1em;
+    margin: 3rem auto 1rem;
+    color: #E2E4F3;
+    font-weight: bold;
+    font-size: 1rem;
+}
